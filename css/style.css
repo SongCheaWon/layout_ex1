@@ -9,14 +9,14 @@ li {
   list-style: none;
 }
 a {
-  color: #333;
+  color: #222;
   text-decoration: none;
 }
 /* 전체 레이아웃 */
 .container {
   width: 1200px;
   height: 1000px;
-  background-color: antiquewhite;
+  /* background-color: antiquewhite; */
   margin: auto;
 }
 /* 상단 */
@@ -28,7 +28,7 @@ a {
 /* 로고 */
 .logo {
   width: 300px;
-  background-color: aqua;
+  /* background-color: aqua; */
   float: left;
   line-height: 100px;
 }
@@ -43,7 +43,7 @@ nav {
   position: relative;
   width: 900px;
   height: 100%;
-  background-color: blue;
+  /* background-color: blue; */
   float: right;
 }
 #topMenu {
@@ -53,66 +53,111 @@ nav {
   width: calc(100% - 100px);
   height: 60px;
   margin-top: 40px;
-  background-color: blueviolet;
+  background-color: rgb(113, 127, 216);
 }
-#topMenu li a{
+#topMenu li a {
   width: calc(100% / 4);
   float: left;
   line-height: 60px;
   text-align: center;
   font-size: 20px;
   font-weight: bold;
-  background-color: aqua;
+  /* background-color: aqua; */
 }
-#topMenu li a:hover{
-    background-color: #001442;
-    color: #fff;
+#topMenu li a:hover {
+  background-color: #001442;
+  color: #fff;
 }
 /* 메인 */
-.contents{
-    width: 100%;
-    height: 800px;
-    background-color: chartreuse;
+.contents {
+  width: 100%;
+  height: 800px;
+  padding: 30px 80px;
+  /* background-color: chartreuse; */
 }
 /* healing */
-.healing{
-    width: 100%;
-    height: calc(100% / 2);
-    background-color: chocolate;
+.healing {
+  width: 100%;
+  height: calc(100% / 2);
+  /* background-color: chocolate; */
 }
 /* title */
-.healing h2{
-    background-color: aquamarine;
+.contents h2 {
+  padding: 10px;
+  /* background-color: aquamarine; */
 }
 /* 설명 */
-.decripton{
-    width: 100%;
-    height: 300px;
-    background-color: brown;
+.decripton {
+  width: 100%;
+  height: 300px;
+  padding: 20px 0px;
+  /* background-color: brown; */
 }
-.dec-img{
-    float: left;
-    width: 450px;
-    height: 100%;
-    background-color: darkblue;
+.dec-img {
+  float: left;
+  width: 450px;
+  height: 100%;
+  border-radius: 20px;
+  overflow: hidden;
+  /* background-color: darkblue; */
 }
-.dec-detail{
-    float: left;
-    width: calc(100% - 450px);
-    height: 100%;
-    background-color: darkgreen;
+.dec-img img {
+  width: 103%;
+  transition: all 0.5s;
+  cursor: pointer;
 }
-.detail-top{
-    height: calc(100% / 2);
-    background-color: crimson;
+.dec-img img:hover {
+  width: 110%;
+  filter: blur(2px);
 }
-.detail-bottom{
-    height: calc(100% / 2);
-    background-color: burlywood;
+.dec-detail {
+  float: left;
+  padding-left: 40px;
+  width: calc(100% - 450px);
+  height: 100%;
+  /* background-color: darkgreen; */
+}
+.detail-top {
+  height: calc(100% / 2);
+  /* background-color: crimson; */
+}
+.detail-top p {
+  font-size: 16px;
+  color: #333;
+  line-height: 1.5;
+}
+.p_top {
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+.detail-bottom {
+  height: calc(100% / 2);
+  /* background-color: burlywood; */
+}
+.dec-detail h3 {
+  margin-bottom: 10px;
 }
 /* activity */
-.activity{
-    height: calc(100% / 2);
-    background-color: cadetblue;
+.activity {
+  height: calc(100% / 2);
+  /* background-color: cadetblue; */
 }
 /* 하단 */
+.footer {
+  width: 100%;
+  height: 100px;
+  border-top: 2px solid #222;
+  padding: 20px 80px;
+  /* background-color: #ddd; */
+}
+#bottomMenu {
+  background-color: aqua;
+}
+#bottomMenu ul li {
+  float: left;
+  padding: 0px 20px;
+  border-right: 1px solid #ddd;
+}
+#bottomMenu ul li:last-child {
+  border: none;
+}
